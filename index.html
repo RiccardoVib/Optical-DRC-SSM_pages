@@ -362,7 +362,7 @@ This paper presents a method for modeling optical dynamic range compressors usin
       </tr>
   <tr>
       <td> <audio controls unmuted><source src="static/audio/5/CL_real_7_5_5_0_3.wav" type="audio/wav"> </audio></td>
-        <td> <audio controls unmuted><source src="static/audio/4/CL_Mamba_7_5_5_0_3.wav" type="audio/wav"> </audio></td>
+        <td> <audio controls unmuted><source src="static/audio/5/CL_Mamba_7_5_5_0_3.wav" type="audio/wav"> </audio></td>
      </tr>
     <tr>
       <th align="center" >S4D</th>
@@ -447,7 +447,121 @@ This paper presents a method for modeling optical dynamic range compressors usin
        </div>
        </div>
          </section>
-  
+
+    <section class="hero teaser">
+      <div class="columns is-centered has-text-centered">
+    <div class="container">
+    <h2 class="title is-3">Impact of dataset size against unseen parameter combinations. The examples refer to S6 model.</h2>
+          <h2 class="title is-3">UAD LA-2A.</h2>
+        <p> Peak Reduction: 55, Compression Mode.</p>
+      <img src="static/audio/Cond_figures/RMS_Git_cond.pdf" alt="rms" style="width:25%" class="center">
+      <img src="static/audio/Cond_figures/SF_Git_cond.pdf" alt="sf" style="width:25%" class="center">
+        </div>
+          </div>
+      
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+    <table align="center" id="myTable">
+        <tr>
+      <th align="center" >Input</th>
+       <th align="center" >Target</th>
+      </tr>
+  <tr>
+      <td> <audio controls unmuted><source src="static/audio/Cond_figures/cond_inp.wav" type="audio/wav"> </audio></td>
+        <td> <audio controls unmuted><source src="static/audio/Cond_figures/cond_tar.wav" type="audio/wav"> </audio></td>
+     </tr>
+    <tr>
+      <th align="center" >S6 (Small) </th>
+      <th align="center" >S6 (Medium) </th>
+      <th align="center" >S6 (Large) </th>
+  </tr>
+    <tr>
+     <td> <audio controls unmuted><source src="static/audio/Cond_figures/0.1cond.wav" type="audio/wav"> </audio></td>
+      <td> <audio controls unmuted><source src="static/audio/Cond_figures/0.05cond.wav" type="audio/wav"> </audio></td>
+      <td> <audio controls unmuted><source src="static/audio/Cond_figures/0.01cond.wav" type="audio/wav"> </audio></td>
+      </tr>
+      </table>
+      </div>
+       </div>
+       </div>
+         </section>
+
+      <section class="hero teaser">
+      <div class="columns is-centered has-text-centered">
+    <div class="container">
+    <h2 class="title is-3"> </h2>
+          <h2 class="title is-3">Softube CL 1B (unseen Threshold and Ratio)</h2>
+        <p> Threshold: -10, Ratio: 4:1, Attack time: 70 ms, Release time: 1 s.</p>
+        <img src="static/audio/Cond_figures/RMS_Git_din.pdf" alt="rms" style="width:25%" class="center">
+      <img src="static/audio/Cond_figures/SF_Git_din.pdf alt="sf" style="width:25%" class="center">
+        </div>
+          </div>
+          <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+    <table align="center" id="myTable">
+        <tr>
+      <th align="center" >Input</th>
+       <th align="center" >Target</th>
+      </tr>
+  <tr>
+      <td> <audio controls unmuted><source src="static/audio/Cond_figures/din_inp.wav" type="audio/wav"> </audio></td>
+        <td> <audio controls unmuted><source src="static/audio/Cond_figures/din_tar.wav" type="audio/wav"> </audio></td>
+     </tr>
+    <tr>
+      <th align="center" >S6 (Small) </th>
+      <th align="center" >S6 (Medium) </th>
+      <th align="center" >S6 (Large) </th>
+  </tr>
+    <tr>
+     <td> <audio controls unmuted><source src="static/audio/Cond_figures/0.2din.wav" type="audio/wav"> </audio></td>
+      <td> <audio controls unmuted><source src="static/audio/Cond_figures/0.1din.wav" type="audio/wav"> </audio></td>
+      <td> <audio controls unmuted><source src="static/audio/Cond_figures/0.05din.wav" type="audio/wav"> </audio></td>
+      </tr>
+      </table>
+      </div>
+       </div>
+       </div>
+         </section>
+
+      <section class="hero teaser">
+      <div class="columns is-centered has-text-centered">
+    <div class="container">
+    <h2 class="title is-3"> </h2>
+          <h2 class="title is-3">Softube CL 1B (unseen Attack and Release times).</h2>
+        <p> Threshold: -20, Ratio: 6:1, Attack time: 75 ms, Release time: 1.25 s.</p>
+        <img src="static/audio/Cond_figures/RMS_Git_time.pdf" alt="rms" style="width:25%" class="center">
+      <img src="static/audio/Cond_figures/SF_Git_time.pdf" alt="sf" style="width:25%" class="center">
+        </div>
+          </div>
+          <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+    <table align="center" id="myTable">
+        <tr>
+      <th align="center" >Input</th>
+       <th align="center" >Target</th>
+      </tr>
+  <tr>
+      <td> <audio controls unmuted><source src="static/audio/Cond_figures/time_inp.wav" type="audio/wav"> </audio></td>
+        <td> <audio controls unmuted><source src="static/audio/Cond_figures/time_tar.wav" type="audio/wav"> </audio></td>
+     </tr>
+    <tr>
+      <th align="center" >S6 (Small) </th>
+      <th align="center" >S6 (Medium) </th>
+      <th align="center" >S6 (Large) </th>
+  </tr>
+    <tr>
+     <td> <audio controls unmuted><source src="static/audio/Cond_figures/0.2time.wav" type="audio/wav"> </audio></td>
+      <td> <audio controls unmuted><source src="static/audio/Cond_figures/0.1time.wav" type="audio/wav"> </audio></td>
+      <td> <audio controls unmuted><source src="static/audio/Cond_figures/0.05time.wav" type="audio/wav"> </audio></td>
+      </tr>
+      </table>
+      </div>
+       </div>
+       </div>
+         </section>
   
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
